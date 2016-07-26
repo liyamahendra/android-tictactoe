@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+
+    <string name="lbl_you_lost">You lost the game.</string>
+    <string name="lbl_game_draw">The game ended in a draw.</string>
+    <string name="lbl_you_won">You won the game.</string>
+
+    <string name="lbl_difficulty_level_prefix">Level:</string>
+    <string name="lbl_difficulty_level_easy">Easy</string>
+    <string name="lbl_difficulty_level_medium">Medium</string>
+    <string name="lbl_difficulty_level_difficult">Difficult</string>
+    <string name="lbl_welcome_title">Welcome to Tic Tac Toe!</string>
+    <string name="lbl_difficulty_level_display">Select the difficulty level from below:</string>
+    <string name="lbl_who_plays_first_display">Who plays the first move?</string>
+    <string name="lbl_user">User</string>
+    <string name="lbl_computer">Computer</string>
+
+    <string name="btn_start_game">Start Game</string>
+</resources>

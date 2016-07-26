@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:id="@+id/lblScreenTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/lbl_welcome_title"
+        android:textSize="@dimen/text_size_screen_title"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lblDifficultyLevelDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblScreenTitle"
+        android:layout_margin="@dimen/margin_difficulty_level_display"
+        android:gravity="center"
+        android:text="@string/lbl_difficulty_level_display"
+        android:textSize="@dimen/text_size_display_text" />
+
+    <RadioGroup
+        android:id="@+id/rgDifficultyLevels"
+        android:layout_below="@id/lblDifficultyLevelDisplay"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdEasy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_difficulty_level_easy"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_difficulty_level_text"
+            />
+        <RadioButton
+            android:id="@+id/rdMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_difficulty_level_medium"
+            android:layout_marginTop="@dimen/margin_difficulty_level_options"
+            android:layout_marginBottom="@dimen/margin_difficulty_level_options"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_difficulty_level_text"
+            />
+        <RadioButton
+            android:id="@+id/rdDifficult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_difficulty_level_difficult"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_difficulty_level_text"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/lblWhoPlaysFirst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rgDifficultyLevels"
+        android:layout_margin="@dimen/margin_who_plays_display"
+        android:gravity="center"
+        android:text="@string/lbl_who_plays_first_display"
+        android:textSize="@dimen/text_size_display_text" />
+
+    <RadioGroup
+        android:id="@+id/rgWhoPlaysFirst"
+        android:layout_below="@id/lblWhoPlaysFirst"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rdUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_user"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_difficulty_level_text"
+            />
+        <RadioButton
+            android:id="@+id/rdComputer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_computer"
+            android:checked="true"
+            android:layout_marginTop="@dimen/margin_difficulty_level_options"
+            android:layout_marginBottom="@dimen/margin_difficulty_level_options"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_difficulty_level_text"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:enabled="false"
+        android:text="@string/btn_start_game"
+        android:textSize="@dimen/text_size_start_game" />
+</RelativeLayout>
