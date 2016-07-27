@@ -49,11 +49,11 @@ public class GameActivity extends BaseActivity {
 
         DIFFICULTY difficulty = TicTacToe.getInstance().getDifficultyLevel();
         if(difficulty == DIFFICULTY.EASY) {
-            lblDifficultyLevel.setText(new StringBuilder(getString(R.string.lbl_difficulty_level_easy)).append(" ").append(getString(R.string.lbl_difficulty_level_easy)));
+            lblDifficultyLevel.setText(new StringBuilder(getString(R.string.lbl_difficulty_level_prefix)).append(" ").append(getString(R.string.lbl_difficulty_level_easy)));
         } else if(difficulty == DIFFICULTY.MEDIUM) {
-            lblDifficultyLevel.setText(new StringBuilder(getString(R.string.lbl_difficulty_level_easy)).append(" ").append(getString(R.string.lbl_difficulty_level_medium)));
+            lblDifficultyLevel.setText(new StringBuilder(getString(R.string.lbl_difficulty_level_prefix)).append(" ").append(getString(R.string.lbl_difficulty_level_medium)));
         } else if(difficulty == DIFFICULTY.DIFFICULT) {
-            lblDifficultyLevel.setText(new StringBuilder(getString(R.string.lbl_difficulty_level_easy)).append(" ").append(getString(R.string.lbl_difficulty_level_difficult)));
+            lblDifficultyLevel.setText(new StringBuilder(getString(R.string.lbl_difficulty_level_prefix)).append(" ").append(getString(R.string.lbl_difficulty_level_difficult)));
         }
 
         TicTacToe.getInstance().startNewGame();
@@ -89,9 +89,11 @@ public class GameActivity extends BaseActivity {
 
                 if(TicTacToe.getInstance().isGameOver()) {
                     showToastLong(getString(R.string.lbl_you_won));
+                    lblDifficultyLevel.setText(getString(R.string.lbl_you_won));
                     finishGame();
                 } else if(TicTacToe.getInstance().getMovesMade() == 9) {
                     showToastLong(getString(R.string.lbl_game_draw));
+                    lblDifficultyLevel.setText(getString(R.string.lbl_game_draw));
                     finishGame();
                 } else {
                     // Mark as used
@@ -156,9 +158,11 @@ public class GameActivity extends BaseActivity {
 
         if(TicTacToe.getInstance().isGameOver()) {
             showToastLong(getString(R.string.lbl_you_lost));
+            lblDifficultyLevel.setText(getString(R.string.lbl_you_lost));
             finishGame();
         } else if(TicTacToe.getInstance().getMovesMade() == 9) {
             showToastLong(getString(R.string.lbl_game_draw));
+            lblDifficultyLevel.setText(getString(R.string.lbl_game_draw));
             finishGame();
         }
     }
