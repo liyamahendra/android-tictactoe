@@ -16,7 +16,7 @@ If User starts -> Computer gets 4 possible moves. If Computer starts -> It gets 
 
 * Easy 	- 33% Winning chances --> Total logical moves 1
 * Medium	- 66% Winning Chances --> Total logical moves 3
-* Hard	- 100% Wining chances --> All logical movees 4/5
+* Hard	- 100% Wining chances --> All logical moves 4/5
 
 Functions needed for the game
 
