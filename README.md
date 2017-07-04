@@ -1,9 +1,6 @@
 # android-tictactoe
 The TicTacToe with three difficulty levels (easy, medium, difficult).
 
-# PlayStore URL
-https://play.google.com/store/apps/details?id=com.mahendra.tictactoe
-
 # Some Paperwork done as a part of initial analysis
 Three levels of difficulty
 - Easy
